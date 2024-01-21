@@ -1,3 +1,4 @@
+import myName from './myName';
 import _ from 'lodash';
 
 function component() {
@@ -6,6 +7,9 @@ function component() {
   // Lodash, currently included via a script, is required for this line to work (before adding lodash) 
   // Lodash, now imported by this script
   element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+
+  //using myName function
+  element.textContent = myName('Panda');
 
   return element;
 }
